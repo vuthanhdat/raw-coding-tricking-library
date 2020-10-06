@@ -12,9 +12,15 @@ jobs:
     # Set the type of machine to run on
     runs-on: ubuntu-latest
     steps:
-       - name: Pupp code 
+       - name: Pull code 
          uses: actions/checkout@v2
        - name: Print current directory
          run : pwd
        - name: List file in dir
          run: ls
+       - name: Check dot net
+         run: dotnet build
+       - name: List file in dir
+         run: ls TrickingLibrary.Api/ -R
+       - name: Check npm
+         run: npm
