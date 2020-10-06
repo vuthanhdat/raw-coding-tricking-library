@@ -20,7 +20,7 @@ jobs:
          run: ls
        - name: Check dot net
          run: dotnet build
-       - name: List file in dir
-         run: ls TrickingLibrary.Api/ -R
+      #  - name: List file in dir
+      #    run: ls TrickingLibrary.Api/ -R
        - name: Check npm
          run: npm
