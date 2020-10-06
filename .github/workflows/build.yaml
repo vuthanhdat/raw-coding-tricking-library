@@ -1,0 +1,21 @@
+name: Build my app
+
+# Run this workflow every time a new commit pushed to your repository
+on: push
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  build:
+    # Name the Job
+    name: build our app
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    # steps:
+    #   - name: Hello world
+    #     uses: actions/hellow-world-js-action@v2
+       -name: Print current directory
+        run : pwd
+       -name: List file in dir
+        run: ls
